@@ -1,0 +1,49 @@
+site_name: shane0 experiments 
+dev_addr: localhost:3002
+
+# pip install -r requirements.txt --upgrade --force-reinstall
+# mkdocs serve 
+# brew uninstall --force mkdocs
+
+theme:
+  # name: readthedocs
+  # name: mkdocs
+  name: material
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - footnotes
+
+
+
+
+plugins:
+  - tags:
+      tags_file: index.md
+      # tags_file: tags.md
+  - search

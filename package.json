@@ -1,0 +1,25 @@
+{
+  "name": "adventure",
+  "version": "1.0.0",
+  "description": "random island adventure",
+  "homepage": "https://shane0.github.io/adventure",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shane0/adventure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shane0/adventure/issues"
+  },
+  "homepage": "https://github.com/shane0/adventure#readme",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
