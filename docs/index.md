@@ -1,7 +1,7 @@
 ---
 tags:
     - instructions
-    - js  
+    - javascript
     - python 
 ---
 # random island adventure
