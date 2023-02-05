@@ -1,4 +1,12 @@
+---
+tags:
+  - javascript
+---
 # javascript
+
+a single page application using plain js and bootstrap
+
+this was my homework for the js & bootstrap front end course portfolio project
 
 ## cartesian coordinates
 
@@ -513,5 +521,13 @@ const fruitMap = new Point('fruitMap', 'islandOne', [fruitMapLocation[0], fruitM
 
 </html>
 ```
+
+## react
+
+wip: I'm currently on the full stack js course
+
+I haven't started react native which is for mobile
+
+I might branch this and add react
 
 [^1]:<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas>
