@@ -6,11 +6,10 @@ tags:
 ---
 
 [home](https://shane0.github.io){ .md-button }
-[workflow template](workflow/){ .md-button }
-[buddhism](buddhism/){ .md-button }
+[workflow template](https://shane0.github.io/workflow/){ .md-button }
+[buddhism](https://shane0.github.io/buddhism/){ .md-button }
 
-[cheatsheets](cheatsheets/){ .md-button }
-[retro games](adventure/){ .md-button }
+[cheatsheets](https://shane0.github.io/cheatsheets/){ .md-button }
 
 ## random island adventure
 
