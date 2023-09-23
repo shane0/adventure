@@ -1,5 +1,7 @@
 site_name: shane0 experiments 
 dev_addr: localhost:3002
+repo_url: https://github.com/shane0/adventure 
+edit_uri: edit/main/docs/ 
 
 # pip install -r requirements.txt --upgrade --force-reinstall
 # mkdocs serve 
@@ -47,3 +49,5 @@ plugins:
       tags_file: index.md
       # tags_file: tags.md
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
