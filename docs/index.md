@@ -4,7 +4,15 @@ tags:
     - javascript
     - python 
 ---
-# random island adventure
+
+[home](https://shane0.github.io){ .md-button }
+[workflow template](workflow/){ .md-button }
+[buddhism](buddhism/){ .md-button }
+
+[cheatsheets](cheatsheets/){ .md-button }
+[retro games](adventure/){ .md-button }
+
+## random island adventure
 
 this is a retro game I play with to practice python and javascript
 
