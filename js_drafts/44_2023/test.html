@@ -1,0 +1,15 @@
+function checkKey(e) {
+    randoMessage(chipDiamond);
+
+    const keyActions = {
+        72: playerOne.moveWest, // 'H' key
+        75: playerOne.moveNorth, // 'K' key
+        76: playerOne.moveEast, // 'L' key
+        74: playerOne.moveSouth, // 'J' key
+    };
+
+    const action = keyActions[e.keyCode];
+    if (action) {
+        action();
+    }
+}
