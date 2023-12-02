@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test checkboxes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: azure;
+            color: dodgerblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-info" role="alert">
+
+
+                    <div id="team" class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="Shane" checked>
+                        <label class="form-check-label" for="Shane">
+                            Shane
+                        </label>
+                    </div>
+
+                    <div id="team" class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="Shancey" checked>
+                        <label class="form-check-label" for="Shancey">
+                            Shancey
+                        </label>
+                    </div>
+
+                    <div id="team" class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="Shenaynay" checked>
+                        <label class="form-check-label" for="Shenaynay">
+                            Shanaynay
+                        </label>
+                    </div>
+
+                    <div id="team" class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="Shiskabob" checked>
+                        <label class="form-check-label" for="Shiskabob">
+                            Shiskabob
+                        </label>
+                    </div>
+
+                    <br />
+
+                    <div>
+                        <button onclick="randomNextPerson()" type="button" class="btn btn-primary">Pick for Me</button>
+                        <div id="displayGoesNext">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            function updateNext() {
+                console.clear()
+                const theBoxes = document.querySelectorAll('input:checked')
+                goNext = []
+                var checkboxArray = [...theBoxes] // convert the checked boxes to an array
+                checkboxArray.forEach(checkBox => {
+                    goNext.push(checkBox.id)
+                });
+                return goNext
+            }
+            function uncheckCheckbox(checkboxId) {
+                const checkbox = document.getElementById(checkboxId);
+                checkbox.checked = false;
+            }
+            function randomNextPerson() {
+                const goNext = updateNext()
+                console.log(goNext)
+                const randomPerson = goNext[Math.floor(Math.random() * goNext.length)]
+                if (randomPerson) {
+                    document.getElementById("displayGoesNext").innerHTML = randomPerson;
+                    console.log(randomPerson)
+                    uncheckCheckbox(randomPerson);
+                } else {
+                    document.getElementById("displayGoesNext").innerHTML = 'Everyone Went';
+                }
+            }
+
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
